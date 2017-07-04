@@ -1,0 +1,249 @@
+<!doctype html>
+<!--
+  Copyright 2016-2017 Fabian Baldeau
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#9669D6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Pasta</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/ic_pasta.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ic_pasta.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#9669D6">
+
+    <link rel="shortcut icon" href="images/favicon_pasta.ico">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-amber.min.css" />
+    <link rel="stylesheet" href="styles_pasta.css">
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="demo.css">
+
+    <!-- Important stylesheet -->
+    <link rel="stylesheet" type="text/css" href="src/material-scrolltop.css">
+
+    <style>
+        .news-card-wide>.mdl-card__title {
+            color: #fff;
+            height: 302px;
+            background: url('https://lh3.googleusercontent.com/4EQcZg8CWnHeNdydK0D97o4rEkvC10d7VVFl79RsH8AgLpDuAbA71GkMHrGsh_1YJUX1cgGgNFi3z3PbV8ZeDy9sEHeTKrYtVXdObuDpWrTs3CeekQPhJZrz5MTnSnbI0JMSX2Uh7zPjp1qLofoGEtV9dfVl4q8KLwE2ZQ-nsAmuKYGe9xh4TpRZB52fb9lIQ8vPbR4w2n7q88SF8_wH3AfIC8-w6OFN1AjngQw482NPSV6SAa-GhSKNubbExIUy1GTNy-qERIUnX9De-zSVwaUdRP9aSsaRiAnDoiqlaWRWb5bVvbFeaKZfYJWHUAt0EKTe5ZxsFB6Y1n2jzgNoPNyFy2BS9JkeUkUHvUmQqPJqqiBJV_aKSfj_hoUT3T2rpVqb72OapA15JcWDhVmEvsZavfd95tcPwyeGj38NmgAwdU69GNd0425kVE9CP0PTndMVvbEQ8KiLBd-llqEVzsQROv5gPvCz7SLtlKBJKvTrOZ7Sv6lG6OwMAYy1uJpckItSFqggo8RM4SsSZ3r01eY2-zbUWhTjZpu86zrpe2xwzxfnGd2bbLwGRHIvu93-NB8LJ6v3yVfE3uxXmc7IB2eocvBoQddEBAF8qB2Y4ER2owahE77cW5PybsbH6sCpPZOl5LePwn13nBgAXPjOEgfBFrZ_iae8z8Cehg9NpQ=w956-h510-no') center / cover;
+        }
+        
+        .news-card-wide>.mdl-card__menu {
+            color: #fff;
+        }
+
+    </style>
+    <style>
+        .scrollup {
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 50px;
+            right: 100px;
+            display: none;
+            text-indent: -9999px;
+            background: url('icon_top.png') no-repeat;
+            background-color: #000;
+        }
+
+    </style>
+    <style>
+        .pasta-card-wide>.mdl-card__title {
+            color: #fff;
+            height: 302px;
+            background: url('https://lh3.googleusercontent.com/F1rM_mzjEFoM8JLjwJb7IkUXkO9VUGE5DGIjoOKG3_xM3ReMzbc0yig4ixIpVLPsJ2Ilol-zPA-Ctqobm0tDcTbhv1e3Ja0y6u2Sf1CqFzgXZJ1v05tIrtkkJUaGFvvYDM1FPhGDZhLML375AkGAfRMqJGgedjCpRFiPeh_YD7B7UTTtqTspNLN0AwpJhO7OV4q-vW6e7oJSCF65xor3Hj5m1G55N3QCLDjQEJWgnEnRsqBGJ4OrBnQwJpF3F5ch8LArgLhcGLJqgfcOeADekoJreAn5hFe_WJDFYfw_UFmx-736C0_66m5oMX5yfEP2Tq_19b-frdknJ1R3tlrSOwwNBj8-F7Hu6dVFUyeYke7BakRxr12WgQbtnbhexOrC1kxd4v14kHOKs9nAjG6ZgQqbq4nrpu3KGHI41XldeCKilwqEa1ZsGaoNqYDoevWR_WiFuwtJfgvigOSElqwt2A19ewQQKe-C2z2SRxfFZNi9JUGvhyMSFbbVoNCZzMorqVDlORoZB3RK6aSU5vk4CPJEvEC_m34faNltBv95PiBGUY1FODfzkToijDX7Yq_1C5nmTaDl9H3MFpDKAN8x04-8MYOwzM5hlqqqNnLWWi3jPFI3MqeeICbOIG0IT01yZVYU-QHoLOy7zS2QaSiI9ADhUBK3sVp2fmMsF77IFQ=w956-h850-no') center / cover;
+        }
+        
+        .pasta-card-wide>.mdl-card__menu {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body class="mdl-demo mdl-color-text--grey-700 mdl-base" oncontextmenu="return false" style="background-color:#141517">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!-- Uses a header that contracts as the page scrolls down. -->
+        <style>
+            .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+                padding-right: 0;
+            }
+
+        </style>
+
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer  mdl-layout--no-desktop-drawer-button">
+            <header class="mdl-layout__header mdl-layout__header--waterfall" id="header" style="background-color:#B184F1">
+                <!-- Top row, always visible -->
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title title-span">Pasta</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                    </div>
+                </div>
+                <!-- Bottom row, not visible on scroll -->
+                <div class="mdl-layout__header-row" style="background-color:#C699FF">
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation -->
+                    <nav class="mdl-navigation mdl-js-ripple-effect">
+                        <a class="mdl-navigation__link" target="_blank" id="emojipasta" href="https://www.reddit.com/r/emojipasta/">/r/emojipasta</a>
+                        <span class="mdl-tooltip mdl-tooltip--large" for="emojipasta">Find new pastas</span>
+                        <a class="mdl-navigation__link" target="_blank" id="github" href="https://github.com/allthemdank/">GitHub</a>
+                        <span class="mdl-tooltip mdl-tooltip--large" for="github">Take a look at the apps code!</span>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer" style="background-color:#1B1C1F">
+                <span class="mdl-layout-title-background">
+                <img class="android-logo-image" src="images/ic_pasta.png">
+        </span>
+
+                <nav class="mdl-navigation">
+
+                    <a id="start-span" class="mdl-navigation__link mdl-color-text--white" href="index.html"><i class="material-icons mdl-color-text--pink-200 drawer-icon-margin">layers</i>  Overview</a>
+
+                    <a id="start-span" class="mdl-navigation__link mdl-color-text--white" href="contact.html"><i class="material-icons drawer-icon-margin" style="color:#DFD19F">mail</i>  Contact</a>
+
+                </nav>
+
+                <span class="mdl-layout-title mdl-color-text--white" style="background-color:#0C0D10">Apps</span>
+
+                <div class="android-drawer-separator"></div>
+
+                <nav class="mdl-navigation">
+
+                    <a id="pasta-span" class="mdl-navigation__link mdl-color-text--deep-purple-A200" style="background-color:#D1C4E9"><i class="material-icons mdl-color-text--deep-purple-A200 drawer-icon-margin">restaurant</i>  Pasta</a>
+
+                    <a id="dankpapes-span" class="mdl-navigation__link mdl-color-text--white" href="dankpapes.html"><i class="material-icons mdl-color-text--white drawer-icon-margin">photo_library</i>  Dank Papes</a>
+
+                    <a id="wan-span" class="mdl-navigation__link mdl-color-text--white" href="wan.html"><i class="material-icons mdl-color-text--yellow-200 drawer-icon-margin">wb_sunny</i>  WaN</a>
+
+                </nav>
+
+            </div>
+            <main class="mdl-layout__content" style="background-color:#141517">
+                <div class="mdl-layout__tab-panel is-active" id="overview">
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="pasta-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-color-text--grey-300" style="background-color:#1B1C1F">
+                            <div class="mdl-card__title">
+                                <img src="images/icon.png" alt="Pasta App" style="width:auto;height:auto;max-width: 200px;max-height: 200px;">
+                                <h4>Pasta
+                                    <p>The App is almost finished, a Beta is already available: ver. 0.9.2</p>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__supporting-text mdl-color-text--grey-300">
+                                <h5>Preview</h5>
+                                <p></p>
+                                <img src="images/AppScreen.png" alt="Pasta App" style="width: 100%; height: 100%;;max-width: 400px;max-height: 400px; margin-right:-120px; margin-left:-48px;">
+                                <img src="images/AppScreen2.png" alt="Pasta App" style="width: 100%; height: 100%;;max-width: 400px;max-height: 400px; margin-right:-120px; margin-left:-48px;">
+                                <img src="images/AppScreen3.png" alt="Pasta App" style="width: 100%; height: 100%;;max-width: 400px;max-height: 400px; margin-right:-120px; margin-left:-48px;">
+                                <p></p>
+                                <h5>Functions</h5>
+                                <ul>
+                                    <li>Copy the pastas with just one tap</li>
+                                    <li>Add own pastas or save your favorites</li>
+                                    <li>Export and import pastas (disabled in newest ver.)</li>
+                                    <li>Unicode Emoticons (not available in newest ver.)</li>
+                                </ul>
+                                <p>
+                                    <a>
+                                        <IMG SRC="https://lh3.googleusercontent.com/skEfl6Y3csFm3wV9fbtcOz4EFa3ljTiM_7VZsl18WmI0kBZNsBZdaTQ2CJRKEf-g4wUM4lAGYw=s328-no" class="drawer-icon-margin" ALT="" WIDTH=24 HEIGHT=24> Only for Android!</a>
+                                </p>
+                                <br>
+                                <p></p><a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--black" id="downloadButton" href="https://drive.google.com/uc?export=download&id=0B0o36-UOMOH5M3JZVnhRWF9lbGM">Download</a>
+                                <span class="mdl-tooltip mdl-tooltip--large" for="downloadButton">Download the newest version of Pasta</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="news-card-wide mdl-card mdl-cell mdl-cell--12-col mdl-color-text--white" style="background-color:#1B1C1F">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Changelog</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text mdl-color-text--grey-300">
+                                <h4>10.05.2017</h4>
+                                <ul>
+                                    <li>New RecyclerView that loads the pastas, faster loading speeds</li>
+                                    <li>New 'Open-Source-Licenses' fragment design</li>
+                                </ul>
+                                <h4>08.01.2017</h4>
+                                <ul>
+                                    <li>Completely redesigned the App, looking good! :)</li>
+                                    <li>Backup and Unicodes not incuded yet</li>
+                                    <li>Much more Pastas included</li>
+                                    <li>Rewrote the theme engine, it's much faster now :)</li>
+                                </ul>
+                                <h4>10.11.2016</h4>
+                                <ul>
+                                    <li>New Amoled Design</li>
+                                    <li>Added Support: you can send an e-mail to me for support</li>
+                                </ul>
+                                <h4>06.10.2016</h4>
+                                <ul>
+                                    <li>New Settings + Theme Engine</li>
+                                    <li>Enhanced Export/Import: Backups go to the folder 'PastaBackup' on your phone</li>
+                                </ul>
+                                <p></p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+                <footer class="mdl-mega-footer footer-margin" style="background-color:#0C0D10">
+                <div class="mdl-mega-footer--bottom-section">
+                    <div class="mdl-logo mdl-color-text--grey-500">
+                        LICENSE
+                    </div>
+                    <ul class="mdl-mega-footer--link-list mdl-color-text--grey-600">
+                        <li>Copyright © 2017 Fabian Baldeau, Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0"><strong> the Apache License, Version 2.0</strong></a></li>
+                        <!-- <li>Android is <a href="https://developer.android.com/legal.html">a trademark of Google Inc.</a></li> -->
+                        <!-- <li><a href="https://s3-eu-west-1.amazonaws.com/tw-font/android/NOTICE">AOSP License</a></li> -->
+                    </ul>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li>
+                            <a target="_blank" href="https://developer.android.com/legal.html">
+                                <IMG SRC="https://lh3.googleusercontent.com/skEfl6Y3csFm3wV9fbtcOz4EFa3ljTiM_7VZsl18WmI0kBZNsBZdaTQ2CJRKEf-g4wUM4lAGYw=s328-no" class="drawer-icon-margin" ALT="" WIDTH=24 HEIGHT=24> <strong class="mdl-color-text--grey-500">Android is a trademark of Google Inc.</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+            </main>
+        </div>
+        <a href="#" class="scrollup">Scroll</a>
+        <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+
+</html>

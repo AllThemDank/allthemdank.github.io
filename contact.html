@@ -1,0 +1,205 @@
+<!--
+Copyright 2017 Marc Oliver Michels
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. 
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#BAAC7A">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Die offizielle Website der Fahrschule Michels aus Goch/Pfalzdorf.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>AllThemDank Contact</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/ic_contact.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="FSM Start">
+    <link rel="apple-touch-icon-precomposed" href="images/ic_contact.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#BAAC7A">
+
+    <link rel="shortcut icon" href="images/favicon_contact.ico">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-purple.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        function windowClose() {
+            window.open('', '_parent', '');
+            window.close();
+        }
+    </script>
+
+</head>
+
+<body oncontextmenu="return false;" class="mdl-demo mdl-color-text--grey-700" style="background-color:#141517">
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--no-desktop-drawer-button">
+
+
+        <dialog class="mdl-dialog mdl-color--grey-200 mdl-color-text--white" id="facebook-dialog">
+
+            <div class="mdl-dialog__title">
+                <h4>Worin soll Facebook gestartet werden?</h4>
+            </div>
+            <div class="mdl-dialog__content">
+                <button id="facebook-notatall" type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white notatall">Nicht starten</button>
+            </div>
+            <div class="mdl-dialog__actions">
+                <button id="facebook-yes" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-shadow--8dp yes">App</button>
+                <button id="facebook-no" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-shadow--8dp no">Website</button>
+
+            </div>
+        </dialog>
+
+        <header class="mdl-layout__header mdl-shadow--4dp" style="background-color:#DFD19F">
+
+            <div class="mdl-layout__header-row">
+
+                <!-- Title -->
+                <span class="title-span">AllThemDank - Contact</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer" style="background-color:#1B1C1F">
+            <span class="mdl-layout-title-background">
+                <img class="android-logo-image" src="images/meirlicon.png">
+        </span>
+
+            <nav class="mdl-navigation">
+
+                <a id="start-span" class="mdl-navigation__link mdl-color-text--white" href="index.html"><i class="material-icons mdl-color-text--pink-200 drawer-icon-margin">layers</i>  Overview</a>
+                
+                 <a id="start-span" class="mdl-navigation__link mdl-color-text--lime-800" style="background-color:#FFFFDF"><i class="material-icons mdl-color-text--lime-800 drawer-icon-margin">mail</i>  Contact</a>
+
+            </nav>
+
+            <span class="mdl-layout-title mdl-color-text--white" style="background-color:#0C0D10">Apps</span>
+
+            <div class="android-drawer-separator"></div>
+
+            <nav class="mdl-navigation">
+
+                <a id="pasta-span" class="mdl-navigation__link mdl-color-text--white" href="pasta.html"><i class="material-icons mdl-color-text--deep-purple-200 drawer-icon-margin">restaurant</i>  Pasta</a>
+
+                <a id="dankpapes-span" class="mdl-navigation__link mdl-color-text--white" href="dankpapes.html"><i class="material-icons mdl-color-text--white drawer-icon-margin">photo_library</i>  Dank Papes</a>
+                
+                <a id="wan-span" class="mdl-navigation__link mdl-color-text--white" href="wan.html"><i class="material-icons mdl-color-text--yellow-200 drawer-icon-margin">wb_sunny</i>  WaN</a>
+
+            </nav>
+
+        </div>
+
+        <main class="mdl-layout__content" style="background-color:#141517">
+
+            <div class="mdl-layout__tab-panel is-active" id="overview">
+                
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col" style="background-color:#1B1C1F">
+                        <div class="mdl-card__supporting-text mdl-color-text--grey-300">
+                            <h4>E-Mail</h4>
+                            <p>Feel free to write me a message. <IMG SRC="https://lh3.googleusercontent.com/-VY99ira_vKnfiU3rg5XyGZ75JuKCp9zty9sDHE4RPuzwyX8zldOrCx3166JKCHOnVyw1hE828s1TVD1Fz9LyNKxtOq5U_9YDq-rbcrrUujuUfv25aF4X1Gb7s9-FPrjCLXQwQ4rewSKhmyH0ADT_NFrRZiktJ9pF1kQaXdjbBoUunKdCOJJ63w0M_W-8j2Q1EyG87o5Wly1kSsXjUV-yHqfKhfu4FJzdXa_-2NlmGpkr12W1LZvSI0TVGKospZWjXSkfnXPoTnyG59nTzEEgQrkFN9IaraSThuRs5giBZttaCSkwzkA3um5ZHBI5ifDyCyKj-sYXZpV1dThc9l7rnLZb--CV8-OkT9h2-srPrs8MI25R39fZweGibGMud2jlviuF8A7p-IGPTN2LTaruPgQfUrL9eWFqHEwDmYOJ32ySEi33BIof7b6SoLgEWFMnQtBOtuNFiIl2MfXqX-y1K-fcL4_L1Xj3ILQ32FyUpMK3gzDX3cWSVeFYBL9_Rfs8L19BFrtp2Wap0aooPgDaysR75SYMw921QGi-ov5QPJBNHR7iO08EmIiyDMzNxoSd0yLzgqBBURPQ0NaeU6g6Qn__UqkO1gHtMzOg5aBXuHg3hb492QG=s33-no" ALT="" WIDTH=24 HEIGHT=24></p>
+                            
+                                
+                                <form action="https://formspree.io/fabian.baldeau@googlemail.com" method="POST">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input mdl-color-text--purple-A200" type="text" name="Name" id="sample3">
+                                <label class="mdl-textfield__label" for="sample3">Your Name...</label>
+                                </div>
+                                
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <input class="mdl-textfield__input mdl-color-text--purple-A200" type="email" name="_replyto" id="sample3">
+                                    <label class="mdl-textfield__label" for="sample3">Your E-Mail...</label>
+                                </div>
+                                
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <textarea type="text" class="mdl-textfield__input mdl-color-text--purple-A200" type="text" name="Nachricht" rows="5" id="sample5"></textarea>
+                                    <label class="mdl-textfield__label" for="sample5">Text...</label>
+                                </div>
+                                
+                                    <p></p>
+                                <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="Senden">
+                                    
+                            </form>
+                            
+                        </div>
+                        <div class="mdl-card__actions_kontakt">
+                        </div>
+                    </div>
+                </section>
+
+                <span class="mdl-tooltip mdl-tooltip--large" for="kontakt-span2">Fragen? Wir stehen immer gerne zur Verfügung</span>
+
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--4dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col" style="background-color:#1B1C1F">
+                        <div class="mdl-card__supporting-text mdl-color-text--grey-300">
+                            <h4>Important</h4>
+                            <p>I will answer your message as fast as possible, but keep in mind that I can't be available all the time.</p>
+                        </div>
+                        <div class="mdl-card__actions_index">
+                        </div>
+                    </div>
+                </section>
+
+                <span class="mdl-tooltip mdl-tooltip--large" for="fahrschulen-span2">Unsere Fahrschulen mit Adressen</span>
+
+            </div>
+            <footer class="mdl-mega-footer footer-margin" style="background-color:#0C0D10">
+                <div class="mdl-mega-footer--bottom-section">
+                    <div class="mdl-logo mdl-color-text--grey-500">
+                        LICENSE
+                    </div>
+                    <ul class="mdl-mega-footer--link-list mdl-color-text--grey-600">
+                        <li>Copyright © 2017 Fabian Baldeau, Licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0"><strong> the Apache License, Version 2.0</strong></a></li>
+                        <!-- <li>Android is <a href="https://developer.android.com/legal.html">a trademark of Google Inc.</a></li> -->
+                        <!-- <li><a href="https://s3-eu-west-1.amazonaws.com/tw-font/android/NOTICE">AOSP License</a></li> -->
+                    </ul>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li>
+                            <a target="_blank" href="https://developer.android.com/legal.html">
+                                <IMG SRC="https://lh3.googleusercontent.com/skEfl6Y3csFm3wV9fbtcOz4EFa3ljTiM_7VZsl18WmI0kBZNsBZdaTQ2CJRKEf-g4wUM4lAGYw=s328-no" class="drawer-icon-margin" ALT="" WIDTH=24 HEIGHT=24> <strong class="mdl-color-text--grey-500">Android is a trademark of Google Inc.</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="dialog-polyfill.js"></script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
