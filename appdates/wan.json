@@ -1,9 +1,8 @@
 {
-  "latestVersion": "1.5.2",
-  "latestVersionCode": "2",
+  "latestVersion": "1.5.3",
+  "latestVersionCode": "3",
   "url": "https://drive.google.com/uc?export=download&id=0B0o36-UOMOH5RkRYYTNDOWpOeFU",
   "releaseNotes": [
-    "- neue Themen hinzugefügt: Dunkel+Amoled",
-    "- neue Animation beim starten der App"
+    "- Webcam von Renesse aktualisiert automatisch + Start & Stop Taste",
   ]
 }
