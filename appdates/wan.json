@@ -1,8 +1,9 @@
 {
-  "latestVersion": "1.5.3",
-  "latestVersionCode": "3",
+  "latestVersion": "1.5.4",
+  "latestVersionCode": "4",
   "url": "https://drive.google.com/uc?export=download&id=0B0o36-UOMOH5RkRYYTNDOWpOeFU",
   "releaseNotes": [
-    "- Webcam von Renesse verbessert"
+    "- Webcam von Renesse verbessert",
+    "- neue Webcam 'Renesse Strand'"
   ]
 }
