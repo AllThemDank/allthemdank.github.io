@@ -1,6 +1,6 @@
 { 
     "android": [ 
-        { "ver": "Schauer und Gewitter sind heute kein Thema mehr, die sind alle fort. Uns erwartet ein sonniger und überall trockener Freitag. Dazu wird es auch heute wieder zunehmend warm bis heiß, teilweise auch wieder schwül. Von angenehmen 17 oder 18 Grad am frühen Morgen steigen die Temperaturen am Nachmittag auf 25 bis 27 Grad im Schatten an. In der Sonne ist es deutlich wärmer, vorsicht, auch heute ist der UV-Index ab Mittag hoch. Der Wind dreht im Tagesverlauf von Süd auf Nordwest und lebt dann zeitweise auf.", "name": "Heute", "api": "API level 4" }, 
+        { "ver": "Schauer und Gewitter sind heute kein Thema mehr, die sind alle fort. Uns erwartet ein sonniger und überall trockener Freitag. \n Dazu wird es auch heute wieder zunehmend warm bis heiß, teilweise auch wieder schwül. Von angenehmen 17 oder 18 Grad am frühen Morgen steigen die Temperaturen am Nachmittag auf 25 bis 27 Grad im Schatten an. In der Sonne ist es deutlich wärmer, vorsicht, auch heute ist der UV-Index ab Mittag hoch. Der Wind dreht im Tagesverlauf von Süd auf Nordwest und lebt dann zeitweise auf.", "name": "Heute", "api": "API level 4" }, 
         { "ver": "2.0 - 2.1", "name": "Morgen", "api": "API level 5 - 7" }, 
         { "ver": "2.2", "name": "Prognose", "api": "API level 8" }, 
         { "ver": "2.3", "name": "Info", "api": "API level 9 - 10" }
