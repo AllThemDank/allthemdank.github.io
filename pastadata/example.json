@@ -1,8 +1,62 @@
 { 
     "android": [ 
-        { "ver": "Schauer und Gewitter sind heute kein Thema mehr, die sind alle fort. Uns erwartet ein sonniger und überall trockener Freitag. \n Dazu wird es auch heute wieder zunehmend warm bis heiß, teilweise auch wieder schwül. Von angenehmen 17 oder 18 Grad am frühen Morgen steigen die Temperaturen am Nachmittag auf 25 bis 27 Grad im Schatten an. In der Sonne ist es deutlich wärmer, vorsicht, auch heute ist der UV-Index ab Mittag hoch. Der Wind dreht im Tagesverlauf von Süd auf Nordwest und lebt dann zeitweise auf.", "name": "Heute", "api": "API level 4" }, 
-        { "ver": "2.0 - 2.1", "name": "Morgen", "api": "API level 5 - 7" }, 
-        { "ver": "2.2", "name": "Prognose", "api": "API level 8" }, 
-        { "ver": "2.3", "name": "Info", "api": "API level 9 - 10" }
+        { "ver": "Schauer und Gewitter sind heute kein Thema mehr, die sind alle fort. Uns erwartet ein sonniger und überall trockener Freitag. \nDazu wird es auch heute wieder zunehmend warm bis heiß, teilweise auch wieder schwül. Von angenehmen 17 oder 18 Grad am frühen Morgen steigen die Temperaturen am Nachmittag auf 25 bis 27 Grad im Schatten an. In der Sonne ist es deutlich wärmer, vorsicht, auch heute ist der UV-Index ab Mittag hoch. Der Wind dreht im Tagesverlauf von Süd auf Nordwest und lebt dann zeitweise auf.", "name": "Heute", "api": "Letzte Aktualisierung : Freitag : 5.20 Uhr" }, 
+        { "ver": "Morgen starten wir mit Sonne, tagsüber werden die Quellwolken zahlreicher, aber nur vereinzelt gibt es am Nachmittag oder Abend einen Schauer.
+
+Für die allermeisten Orte bleibt es aber trocken bei warmen 23 bis 25 Grad in der Spitze.
+
+Der Nordwestwind ist nur schwach.", "name": "Morgen", "api": "Letzte Aktualisierung : Freitag : 5.20 Uhr" }, 
+        { "ver": "Der Sonntag wird oft freundlich und warm mit bis zu 25 Grad am Nachmittag.
+
+In der Nacht zu Montag oder erst am Montag selber (so ganz ist das noch nicht klar) fällt dann schauerartiger teils gewittriger Regen.
+
+Ab Montag wird es dann kühler mit maximal 20 bis 22 Grad am Nachmittag.
+
+Alle Hitzegeplagten können dann wieder aufatmen, in der kommenden Woche deutet sich keine neue Hitzewelle an.", "name": "Prognose", "api": "Letzte Aktualisierung : Freitag : 5.20 Uhr" }, 
+        { "ver": "So hier nur einige Niederschlagsmeldungen vom Niederrhein:
+
+Sonsbeck 7mm
+
+Twistenden 7,6 mm
+
+Weeze-Hörst 7 mm
+
+Staelen-vossum 23 mm
+
+Goch-Kessel  8mm
+
+Hassum 12 mm
+
+Rheurdt 16 mm
+
+Wesel-Bislich 10 mm
+
+Rees 10 mm
+
+Geldern-Veert 12mm
+
+Reichswalde 6mm
+
+Kerken-Obereyll 25 mm
+
+Wankum 17 mm
+
+Asperden 9mm
+
+Vrasselt 14 mm
+
+Keppeln 9,5 mm
+
+Kamp-Lintfort Wickrath 8 mm
+
+Wankum 10 mm
+
+Rees-Millingen 12mm
+
+Duisburg-Rheinhausen 13 mm
+
+und und und vielen DANK besonders denen die ich leider nicht alle aufführen konnte!!!
+
+Es sind zu viele sorry", "name": "Info", "api": "Nächste Aktualisierung : Freitag gegen 20.30 Uhr" }
     ] 
 }
