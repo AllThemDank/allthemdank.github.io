@@ -618,16 +618,18 @@ div .mdl-textfield__label:after {
     font-size: 20px;
 }
 
-.help-ribbon {
-    width: 100%;
+.index-ribbon {
+    width: 150%;
+    margin-left: -16px;
     height: 40vh;
-    background-color: #F8BBD0;
+    background-color: #AAFFDB;
+    /* background-image: url('http://assets.manualcreative.com/wp-content/uploads/2014/09/Google_detail-2998x1998.jpg'); */
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
-.demo-main {
+.ribbon-main {
     margin-top: -35vh;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
