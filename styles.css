@@ -50,7 +50,6 @@ footer {
 }
 
 .android-navigation {
-    /* ... and now make sure the content is actually LTR */
     direction: ltr;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -231,7 +230,6 @@ div .mdl-textfield__label:after {
 }
 
 .mdl-demo main>.mdl-layout__tab-panel {
-    padding: 8px;
     padding-top: 48px;
 }
 
@@ -621,7 +619,6 @@ div .mdl-textfield__label:after {
 .index-ribbon {
     width: 100%;
     height: 40vh;
-    margin-left: -8px;
     background-color: #AAFFDB;
     /* background-image: url('http://assets.manualcreative.com/wp-content/uploads/2014/09/Google_detail-2998x1998.jpg'); */
     -webkit-flex-shrink: 0;
