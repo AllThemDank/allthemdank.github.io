@@ -1,9 +1,9 @@
 {
-  "latestVersion": "1.5.7",
-  "latestVersionCode": "7",
+  "latestVersion": "1.5.8",
+  "latestVersionCode": "8",
   "url": "https://drive.google.com/uc?export=download&id=0B0o36-UOMOH5RkRYYTNDOWpOeFU",
   "releaseNotes": [
-    "- Webcams von Renesse verbessert",
-    "- neues Drawer Design"
+    "- Drawer Design verbessert",
+    "- neue Teilen-Taste"
   ]
 }
