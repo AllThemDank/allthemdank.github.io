@@ -759,7 +759,8 @@ div .mdl-textfield__label:after {
   background: #FAFAFA;
 }
 
-.mdl-layout__drawer-button {
+.mdl-layout .mdl-layout__header,
+.mdl-layout .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
     outline:none; 
