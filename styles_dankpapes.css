@@ -758,3 +758,10 @@ div .mdl-textfield__label:after {
 .mdl-layout__header.is-casting-shadow {
   background: #FAFAFA;
 }
+
+.mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+    outline:none; 
+    focus:none;
+}
