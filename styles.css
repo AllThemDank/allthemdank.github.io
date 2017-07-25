@@ -27,10 +27,6 @@ main {
   background: #F5F5F5;
   background-size: cover; }
 
-.mdl-layout {
-    background: #AAFFDB;
-}
-
 footer {
     box-shadow: 0px 500px 0px 500px #1d1d1d;
 }
