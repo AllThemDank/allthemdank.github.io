@@ -52,6 +52,11 @@ limitations under the License.
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-purple.min.css" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
+    
+    <link href="http://vjs.zencdn.net/6.2.0/video-js.css" rel="stylesheet">
+    
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
@@ -115,7 +120,7 @@ limitations under the License.
                     <div class="mdl-card mdl-cell mdl-cell--12-col" style="background-color:#FAFAFA">
                         <div class="mdl-card__supporting-text mdl-color-text--grey-800">
                             <h4>E-Mail</h4>
-                            <p>Feel free to write me a message. <IMG SRC="https://lh3.googleusercontent.com/-VY99ira_vKnfiU3rg5XyGZ75JuKCp9zty9sDHE4RPuzwyX8zldOrCx3166JKCHOnVyw1hE828s1TVD1Fz9LyNKxtOq5U_9YDq-rbcrrUujuUfv25aF4X1Gb7s9-FPrjCLXQwQ4rewSKhmyH0ADT_NFrRZiktJ9pF1kQaXdjbBoUunKdCOJJ63w0M_W-8j2Q1EyG87o5Wly1kSsXjUV-yHqfKhfu4FJzdXa_-2NlmGpkr12W1LZvSI0TVGKospZWjXSkfnXPoTnyG59nTzEEgQrkFN9IaraSThuRs5giBZttaCSkwzkA3um5ZHBI5ifDyCyKj-sYXZpV1dThc9l7rnLZb--CV8-OkT9h2-srPrs8MI25R39fZweGibGMud2jlviuF8A7p-IGPTN2LTaruPgQfUrL9eWFqHEwDmYOJ32ySEi33BIof7b6SoLgEWFMnQtBOtuNFiIl2MfXqX-y1K-fcL4_L1Xj3ILQ32FyUpMK3gzDX3cWSVeFYBL9_Rfs8L19BFrtp2Wap0aooPgDaysR75SYMw921QGi-ov5QPJBNHR7iO08EmIiyDMzNxoSd0yLzgqBBURPQ0NaeU6g6Qn__UqkO1gHtMzOg5aBXuHg3hb492QG=s33-no" ALT="" WIDTH=24 HEIGHT=24></p>
+                            <p>Feel free to write me a message. <IMG SRC="https://lh3.googleusercontent.com/xHPMCad1K9lgTcBaS1Wq5OAMvBCaTd0S3uYEn6gdX4NvOBL1_RsbFYoaDtBXEYLfOTzhn2zOoduOGlG9b4tSqqiFvJMzQL8Yb6sS4I23aqOKJWG0KbPXmEYDDBEQtDr_sih02I43TnPGhcBiYqUVgFqfRzdWFoRfNasqAxYG2Dq4VlfBnpw7CsmLmtzf7EVngK3FsX6_myTNGEeN5hOwEEsRuY9PBIrvdNSCkBP13mdq0FgqfZXOjeW_CKvl6gRZFp_-iCS9Iv48yBU3ouhGjHt8prysQaWRK3KbtvKJhYP2OgJQA3-pH9-0O0RL9oi5bfWbjbns27FSssxlKk_5ptAvL4BEOYr4k0KquyBZ5zV1qz75kMLrX0DM2j6TV1OQnRHvQa__rKP4u2sPwB3tlgkXqDD8cvhx-EN-5opL4fYiQwXBleI5JgdQXhGYHk7J0Oqem-8lESCEedN7rDI2D-g8Kq5QU4M-nQ9eS6qV5MpeiRyWObpA0NccqEfHwO_4Z4fPwA3CzFa16rlQYcJFCV140_mkCEz27Gsikl7wYWvsVMVMwQWCS9AeewXx6U98uQ5fXZ3tc_z9kCOzoxvOBAgiltvWf9Xfh3xa4S7Swef6NpSDJB2P4rPl=s33-no" ALT="" WIDTH=24 HEIGHT=24></p>
                             
                                 
                                 <form action="https://formspree.io/allthemdank@googlemail.com" method="POST">
@@ -146,8 +151,6 @@ limitations under the License.
                     </div>
                 </section>
 
-                <span class="mdl-tooltip mdl-tooltip--large" for="kontakt-span2">Fragen? Wir stehen immer gerne zur Verfügung</span>
-
                 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
                     <div class="mdl-card mdl-cell mdl-cell--12-col" style="background-color:#FAFAFA">
                         <div class="mdl-card__supporting-text mdl-color-text--grey-800">
@@ -158,8 +161,18 @@ limitations under the License.
                         </div>
                     </div>
                 </section>
-
-                <span class="mdl-tooltip mdl-tooltip--large" for="fahrschulen-span2">Unsere Fahrschulen mit Adressen</span>
+                
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col" style="background-color:#FAFAFA">
+                        <div class="mdl-card__supporting-text mdl-color-text--grey-800">
+                            <h4>Important</h4>
+                            <p>I will answer your message as fast as possible, but keep in mind that I can't be available all the time.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lvu52ESt0Ks" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="mdl-card__actions_index">
+                        </div>
+                    </div>
+                </section>
 
             </div>
             <footer class="mdl-mega-footer footer-margin" style="background-color:#0C0D10">
@@ -185,6 +198,7 @@ limitations under the License.
     <script src="dialog-polyfill.js"></script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="script.js"></script>
+    <script src="http://vjs.zencdn.net/6.2.0/video.js"></script>
 </body>
 
 </html>
