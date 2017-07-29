@@ -21,6 +21,14 @@ body {
     padding: 0;
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.mdl-layout {
+    background: #B184F1;
+}
+
 .btn {
     background: #4caf50;
     text-align: center;
@@ -466,3 +474,20 @@ footer {
       margin-bottom: 40px;
       z-index: 900;
     }
+
+.mdl-layout__header {
+  -webkit-transition-property: max-height,box-shadow,background;
+  transition-property: max-height,box-shadow,background;
+}
+
+.mdl-layout__header.is-casting-shadow {
+  background: #B184F1;
+}
+
+.mdl-layout .mdl-layout__header,
+.mdl-layout .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+    outline:none; 
+    focus:none;
+}

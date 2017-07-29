@@ -28,6 +28,10 @@ main {
   background-size: cover; 
 }
 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 .mdl-layout {
     background: #B2DFDB;
 }
