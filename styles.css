@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
+ /**
+  *  ::-webkit-scrollbar {
+       display: none;
+   }
+  */
+
 html,
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -26,10 +32,6 @@ body {
 main {
   background: #F5F5F5;
   background-size: cover; }
-
-::-webkit-scrollbar { 
-    display: none; 
-}
 
 .mdl-layout {
     background: #FFB0B3;
@@ -93,14 +95,14 @@ footer {
 }
 
 .mdl-layout__drawer {
-    
+
     border-right: none;
 }
 
 .android-drawer-separator {
     height: 1px;
     background-color: #303030;
-    
+
 }
 
 .android-drawer .mdl-navigation__link.mdl-navigation__link {
@@ -777,6 +779,6 @@ div .mdl-textfield__label:after {
 .mdl-layout .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-    outline:none; 
+    outline:none;
     focus:none;
 }

@@ -21,10 +21,6 @@ body {
     padding: 0;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
-
 .mdl-layout {
     background: #B184F1;
 }
@@ -488,6 +484,6 @@ footer {
 .mdl-layout .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-    outline:none; 
+    outline:none;
     focus:none;
 }

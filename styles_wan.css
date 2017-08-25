@@ -25,11 +25,7 @@ body {
 
 main {
   background: #F5F5F5;
-  background-size: cover; 
-}
-
-::-webkit-scrollbar { 
-    display: none; 
+  background-size: cover;
 }
 
 .mdl-layout {
@@ -95,14 +91,14 @@ footer {
 }
 
 .mdl-layout__drawer {
-    
+
     border-right: none;
 }
 
 .android-drawer-separator {
     height: 1px;
     background-color: #303030;
-    
+
 }
 
 .android-drawer .mdl-navigation__link.mdl-navigation__link {

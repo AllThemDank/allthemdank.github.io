@@ -25,15 +25,11 @@ body {
 
 main {
   background: #F5F5F5;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .mdl-layout {
     background: #DFD19F;
-}
-
-::-webkit-scrollbar { 
-    display: none; 
 }
 
 footer {
@@ -94,14 +90,14 @@ footer {
 }
 
 .mdl-layout__drawer {
-    
+
     border-right: none;
 }
 
 .android-drawer-separator {
     height: 1px;
     background-color: #303030;
-    
+
 }
 
 .android-drawer .mdl-navigation__link.mdl-navigation__link {
@@ -777,6 +773,6 @@ div .mdl-textfield__label:after {
 .mdl-layout .mdl-layout__drawer-button {
   /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-    outline:none; 
+    outline:none;
     focus:none;
 }
