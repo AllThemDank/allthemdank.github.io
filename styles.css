@@ -782,3 +782,8 @@ div .mdl-textfield__label:after {
     outline:none;
     focus:none;
 }
+
+.demo-layout.is-small-screen .demo-content {
+  padding: 40px 28px;
+  margin-top: 1vh;
+}
